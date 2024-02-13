@@ -18,5 +18,3 @@ variable "rds_instance_class" {}
 variable "rds_db_name" {}
 variable "final_snapshot_identifier" {}
 
-variable "ec2_ami" {}
-variable "instance_type" {}

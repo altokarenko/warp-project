@@ -9,11 +9,11 @@ provider "aws" {
 terraform {
   required_version = ">=1.1.0"
   backend "s3" {
-    bucket         = "opara-terraform-backend"
-    key            = "dev/terraform.tfstate"
+    bucket         = "warp-terraform-backend"
+    key            = "prod/terraform.tfstate"
     region         = "us-west-2"
     encrypt        = true
-    dynamodb_table = "opara-terraform-backend"
+    dynamodb_table = "warp-terraform-backend"
   }
 
   required_providers {
