@@ -42,18 +42,18 @@ Before you begin, ensure you have the following:
 
 ## Deployment Steps
 
-# 1. Deploy Backend
+#### 1. Deploy Backend
 
 Deploy the backend infrastructure using Terraform:
 ```bash
 make deploy-backend
 ```
-### 2. Deploy Secrets for RDS
+#### 2. Deploy Secrets for RDS
 Deploy the secrets for RDS using Terraform:
 ```bash
 make set-ssm-parameters
 ```
-### 3. Deploy Secrets for Infra
+#### 3. Deploy Secrets for Infra
 Deploy infrastructure using Terraform:
 ```bash
 make apply-environment
