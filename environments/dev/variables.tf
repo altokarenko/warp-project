@@ -6,7 +6,6 @@ variable "single_nat_gateway" {}
 variable "account_id" {}
 variable "iam_username" {}
 
-#RDS
 variable "rds_subnet_group_name" {}
 variable "rds_subnet_group_tags" {}
 variable "rds_allocated_storage" {}

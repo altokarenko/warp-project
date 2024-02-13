@@ -1,7 +1,7 @@
 module "ecr" {
   source       = "cloudposse/ecr/aws"
   version      = "0.36.0"
-  name         = "wsgi-${var.project_name}-${var.environment}"
+  name         = "wsgi-${var.project_name}-${var.environment}-repository"
   force_delete = true
 }
 

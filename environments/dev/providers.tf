@@ -10,7 +10,7 @@ terraform {
   required_version = ">=1.1.0"
   backend "s3" {
     bucket         = "warp-terraform-backend"
-    key            = "prod/terraform.tfstate"
+    key            = "dev/terraform.tfstate"
     region         = "us-west-2"
     encrypt        = true
     dynamodb_table = "warp-terraform-backend"
