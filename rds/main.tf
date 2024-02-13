@@ -14,13 +14,13 @@ resource "aws_db_subnet_group" "default" {
 }
 
 resource "aws_db_instance" "db" {
-  allocated_storage = var.rds_allocated_storage
-  identifier        = var.rds_identifier
-  storage_type      = var.rds_storage_type
-  engine            = var.rds_engine
-  engine_version    = var.rds_engine_version
-  instance_class    = var.rds_instance_class
-  db_name           = var.rds_db_name
+  allocated_storage                   = var.rds_allocated_storage
+  identifier                          = var.rds_identifier
+  storage_type                        = var.rds_storage_type
+  engine                              = var.rds_engine
+  engine_version                      = var.rds_engine_version
+  instance_class                      = var.rds_instance_class
+  db_name                             = var.rds_db_name
   username                            = data.aws_ssm_parameter.rds_username.value
   password                            = data.aws_ssm_parameter.rds_password.value
   db_subnet_group_name                = aws_db_subnet_group.default.name

@@ -17,4 +17,3 @@ variable "rds_engine_version" {}
 variable "rds_instance_class" {}
 variable "rds_db_name" {}
 variable "final_snapshot_identifier" {}
-
