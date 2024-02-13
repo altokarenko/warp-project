@@ -42,7 +42,7 @@ Before you begin, ensure you have the following:
 
 ## Deployment Steps
 
-### 1. Deploy Backend
+# 1. Deploy Backend
 
 Deploy the backend infrastructure using Terraform:
 ```bash
