@@ -53,7 +53,7 @@ Deploy the backend infrastructure using Terraform:
 make deploy-backend
 ```
 #### 2. Deploy Secrets for RDS
-Deploy the secrets for RDS using Terraform:
+Deploy the secrets for RDS using AWS CLI:
 ```bash
 make set-ssm-parameters
 ```
